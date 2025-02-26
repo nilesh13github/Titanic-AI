@@ -88,3 +88,4 @@ uvicorn==0.34.0
 watchdog==6.0.0
 yarl==1.18.3
 zstandard==0.23.0
+langchain_huggingface

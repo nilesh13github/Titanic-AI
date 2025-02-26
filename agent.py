@@ -7,7 +7,6 @@ from graph import detect_graph_type, graph_generator
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
-
 chat_model = HuggingFaceEndpoint(
     repo_id="mistralai/Mistral-7B-Instruct-v0.3", 
     max_new_tokens = 100,

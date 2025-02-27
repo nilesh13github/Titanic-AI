@@ -38,7 +38,7 @@ The table 'Observation' of the Titanic Ship Dataset contains the following colum
 - sibsp (INT): Number of siblings and spouses a passenger had on board
 - parch (INT): Number of parents and children aboard
 - sex_id (TEXT): Gender (1 = male, 0 = female)
-- fare (REAL): Ticket fare
+- fare (REAL): The amount paid by the passenger for their ticket
 - adult_male (INT): Adult Male (1 = yes, 0 = no)
 - alone (INT): Alone (1 = yes, 0 = not alone)
 - embarked_id (INT): Port of embarkation (Unknown = -1, Cherbourg = 0, Queenstown = 1, Southampton = 0)

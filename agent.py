@@ -41,7 +41,7 @@ The table 'Observation' of the Titanic Ship Dataset contains the following colum
 - fare (REAL): Ticket fare
 - adult_male (INT): Adult Male (1 = yes, 0 = no)
 - alone (INT): Alone (1 = yes, 0 = not alone)
-- embarked_id (INT): Port of embarkation (-1 = Unknown, 0 = Cherbourg, 1 = Queenstown, 2 = Southampton)
+- embarked_id (INT): Port of embarkation (Unknown = -1, Cherbourg = 0, Queenstown = 1, Southampton = 0)
 - survived (INTEGER): Survival status (1 = survived, 0 = did not survive)
 
 **Instructions:**

@@ -5,7 +5,9 @@ from query import sqlite_query
 from query_fixer import fix_sql_spacing
 from graph import detect_graph_type, graph_generator
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+hf_token = "replace this with your hugging face acess token"
+
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
 
 chat_model = HuggingFaceEndpoint(
     repo_id="mistralai/Mistral-7B-Instruct-v0.3", 

@@ -5,7 +5,7 @@ from query import sqlite_query
 from query_fixer import fix_sql_spacing
 from graph import detect_graph_type, graph_generator
 
-hf_token = "replace this with your hugging face acess token"
+hf_token = "hugging face acess token"
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
 

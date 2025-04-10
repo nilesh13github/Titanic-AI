@@ -10,8 +10,7 @@ hf_token = "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"
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
 
 chat_model = HuggingFaceEndpoint(
-    repo_id="mistralai/Mistral-7B-Instruct-v0.3", 
-    task = "text-generation",
+    repo_id="mistralai/Mistral-7B-Instruct-v0.3",
     max_new_tokens = 100,
     top_k=1,
     temperature=2,
@@ -21,7 +20,6 @@ chat_model = HuggingFaceEndpoint(
 )
 chat_model_sql = HuggingFaceEndpoint(
     repo_id="mistralai/Mistral-7B-Instruct-v0.3", 
-    task = "text-generation",
     max_new_tokens = 75,
     top_k=1,
     temperature=1,

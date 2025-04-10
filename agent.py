@@ -21,6 +21,7 @@ chat_model = HuggingFaceEndpoint(
 )
 chat_model_sql = HuggingFaceEndpoint(
     repo_id="mistralai/Mistral-7B-Instruct-v0.3", 
+    task = "text-generation",
     max_new_tokens = 75,
     top_k=1,
     temperature=1,

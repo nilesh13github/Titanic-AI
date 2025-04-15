@@ -10,11 +10,12 @@ hf_token = "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"
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
 
 chat_model = HuggingFaceEndpoint(
-    repo_id="mistralai/Mistral-7B-Instruct-v0.3",
-    max_new_tokens = 100,
+    repo_id="mistralai/Mistral-7B-Instruct-v0.3", 
+    max_new_tokens = 150,
     top_k=1,
     temperature=2,
-    stop_sequences=[";", "[nthg]", ".\n", ". Here's "]
+    stop_sequences=[":", ".\n", ". Here's ", "̌["],
+    early_stopping = True
     
     
 )

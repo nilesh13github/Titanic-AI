@@ -1,4 +1,4 @@
-## main.py Features
+## agent.py Features
 
 - 💬 **Natural Language Querying**: Ask questions like “How many females survived?” or “What’s the average fare paid by third-class passengers?” — and get meaningful responses.
 - 🧠 **Dual LLM Support**: Utilizes `Mistral-7B-Instruct-v0.3` (via HuggingFace) — one model specialized for SQL generation, another for natural response generation.

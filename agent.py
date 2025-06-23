@@ -10,23 +10,26 @@ hf_token = "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"
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
 
 chat_model = HuggingFaceEndpoint(
-    repo_id="mistralai/Mistral-7B-Instruct-v0.3", 
-    max_new_tokens = 150,
-    top_k=1,
-    temperature=2,
-    stop_sequences=[":", ".\n", ". Here's ", "̌["],
-    early_stopping = True
-    
-    
+    endpoint_url="https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3",
+    huggingfacehub_api_token=hf_token,
+    model_kwargs={
+        "max_new_tokens": 150,
+        "top_k": 1,
+        "temperature": 2,
+        "stop": [":", ".\n", ". Here's ", "̌["],
+        "early_stopping": True
+    }
 )
+
 chat_model_sql = HuggingFaceEndpoint(
-    repo_id="mistralai/Mistral-7B-Instruct-v0.3", 
-    max_new_tokens = 75,
-    top_k=1,
-    temperature=1,
-    stop_sequences=[";", "[nthg]", "**"]
-    
-    
+    endpoint_url="https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3",
+    huggingfacehub_api_token=hf_token,
+    model_kwargs={
+        "max_new_tokens": 75,
+        "top_k": 1,
+        "temperature": 1,
+        "stop": [";", "[nthg]", "**"]
+    }
 )
 
 def query_generator(q_text):
